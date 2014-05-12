@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+  </head>
+ 
+  <body>   
+    <p id="text"></p>
+    <script type="application/dart" src="client.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+    
+    <div>
+      <h1>Login</h1>
+      <div>
+        <label for="#login_username">Username</label>
+        <input type="text" id="login_username">
+      </div>
+      <div>
+        <label for="#login_password">Password</label>
+        <input type="password" id="login_password">
+      </div>
+      <div>
+        <button id="send_login">Login</button>
+      </div>
+    </div>
+    
+    <div>
+      <h1>New User</h1>
+      <div>
+        <label for="#new_username">Username</label>
+        <input type="text" id="new_username">
+      </div>
+      <div>
+        <label for="#new_password">Password</label>
+        <input type="password" id="new_password">
+      </div>
+      <div>
+        <button id="send_new_user">Create User</button>
+      </div>
+    </div>
+
+    <div>
+      <a href="user/page.html">Private content</a>
+    </div>
+    
+    <div>
+      <button id="logout">Logout</button>
+    </div>
+
+  </body>
+</html>
+
